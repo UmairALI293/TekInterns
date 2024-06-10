@@ -1,0 +1,11 @@
+﻿@model IEnumerable<TekInternsRecord.Components.Admin.AdminNavViewComponent>
+
+
+    <ul class="navbar-nav flex-grow-1">
+    @foreach (var item in Model)
+    {
+        <li class="nav-item">
+            <a class=" nav-link "asp-area="@item.Area" asp-controller="@item.Controller" asp-action="@item.Action">@item.Label </a>
+        </li>
+    }
+    </ul>
